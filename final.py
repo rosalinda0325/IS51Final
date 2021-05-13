@@ -16,7 +16,7 @@ percentage of the average grade.
 """
 initiate
 main()
-open final.txt
+open final.txt in #read
 
 function1
 grade = int(grade)
@@ -34,3 +34,17 @@ print(" ")
 main()
 
 """
+
+infile = open("Final.txt", 'r')
+grades = [line.rstrip() for line in infile]
+infile.close()
+for i in range(len(grades)):
+    grades[i] = int(grades[i])
+average = sum(grades) / len(grades)
+num = 0
+for grade in grades:
+    if grade > average:
+        num += 1
+    print("Number of Grades: ", len(grades))
+    print("Average grade: ", average)
+    print("Percentage of grades avbove average: , {0:.2f}%".format(100 * num / len(grades)))
