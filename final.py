@@ -13,3 +13,24 @@ percentage of the average grade.
 
 
 """
+"""
+initiate
+main()
+open final.txt
+
+function1
+grade = int(grade)
+
+function2
+average =sum (grade) / length (grade)
+num = 0
+
+function3 
+if grade > average
+num += 1
+
+print(" ")
+
+main()
+
+"""
